@@ -316,9 +316,17 @@ footer h3{
 
 @media screen and (min-width: 768px){
 
+    .logo, .main-content, .main-cards, .infos, .cta{
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+}
     /* CABEÇALHO */
 
-    header {
+    
+    /*header {
         height: 600px;
         height: 60vh;
         justify-content: center;
@@ -331,7 +339,7 @@ footer h3{
 
     /* CONTEÚDO PRINCIPAL */
 
-    .main-content{
+    /*.main-content{
         justify-content: center;
         height: 250px;
         height: 30vh;
@@ -350,7 +358,7 @@ footer h3{
 
     /* CARDS */
 
-    .main-cards{
+    /*.main-cards{
         flex-direction: row;
         flex-wrap: wrap;
         align-items: flex-start;
@@ -375,7 +383,7 @@ footer h3{
 
     /* INFORMAÇÕES */
 
-    .infos{
+    /*.infos{
         justify-content: space-around;
         max-width: 500px;
         margin: 0 auto;
@@ -396,4 +404,4 @@ footer h3{
     .img-whats img{
         width: 33.3333333%;
     }
-}
+    /*
