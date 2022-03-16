@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
 /* CORPO */
 
 *{
@@ -310,8 +308,92 @@ footer{
     align-items: center;
 }
 
-.direitos h3{
+footer h3{
     padding-top: 15px;
     font-weight: normal;
     color: #fff;
+}
+
+@media screen and (min-width: 768px){
+
+    /* CABEÇALHO */
+
+    header {
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+    }
+
+    header .logo{
+        text-align: center;
+        width: 100%;
+    }
+
+    /* CONTEÚDO PRINCIPAL */
+
+    .main-content{
+        justify-content: center;
+        height: 250px;
+        height: 30vh;
+        min-height: 250px;
+    }
+
+    .main-content h1{
+        text-align: center;
+        width: 100%;
+    }
+
+    .main-content h3{
+        text-align: center;
+        width: 100%;
+    }
+
+    /* CARDS */
+
+    .main-cards{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+        justify-content: center;
+        height: 250px;
+        height: 30vh;
+        min-height: 250px;
+    }
+
+    .main-content h2{
+        text-align: center;
+        width: 100%;
+    }
+
+    .cards{
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+    }
+
+    /* INFORMAÇÕES */
+
+    .infos{
+        justify-content: space-around;
+        max-width: 500px;
+        margin: 0 auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .final-content h2{
+        text-align: center;
+        width: 100%;
+    }
+
+    .final-content h1{
+        text-align: center;
+        width: 100%;
+    }
+
+    .img-whats img{
+        width: 33.3333333%;
+    }
 }
