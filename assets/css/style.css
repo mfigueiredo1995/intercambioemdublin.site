@@ -29,24 +29,24 @@ header{
     justify-content: center;
 }
 
-header div{
+header .logotipo{
     display: inline-flex;
     margin-left: -20px;
 }
 
-header img{
+.logotipo img{
     margin-top: -10px;
     height: 80px;
 }
 
-header h1{
+.logotipo h1{
     width: 200px;
     color: #fff;
     font-size: 25px;
     letter-spacing: 1px;
 }
 
-header span{
+.logotipo span{
     color: #008037;
     letter-spacing: 5px;
     font-weight: bold;
