@@ -3,13 +3,6 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-html{
-    width: 100%;
-    height: auto;
-    font-family: 'Lato', sans-serif;
 }
 
 body{
@@ -19,97 +12,100 @@ body{
     background-size: cover;
     background-position-y: 0px;
     background-repeat: no-repeat;
+    min-width: 320px;
+    max-width: 1024px;
+    height: auto;
+    margin: auto;
+    font-family: 'Lato', sans-serif;
 }
 
 /* CABEÇALHO */
 
 header{
     display: flex;
+    width: 100%;
     margin-top: 20px;
     align-items: center;
     justify-content: center;
 }
 
-.logo{
-    width: 30%;
-    height: 120px;
-
+header div{
+    display: inline-flex;
+    margin-left: -20px;
 }
 
-.logo img{
-    margin-top: 10px;
-    height: 120px;
-
+header img{
+    margin-top: 5px;
+    height: 80px;
 }
 
-.logo h2{
-    margin-top: -110px;
-    margin-left: 120px;
+header h1{
+    width: 200px;
     color: #fff;
-    font-size: 40px;
+    font-size: 25px;
+    letter-spacing: 1px;
 }
 
-.logo span{
+header span{
     color: #008037;
-    letter-spacing: 6px;
+    letter-spacing: 5px;
     font-weight: bold;
 }
 
 /* CONTEUDO PRINCIPAL */
 
-.main-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+ main{
+
+    display: block;
     align-items: center;
-    margin-top: 80px;
+    justify-content: center;
+    margin-top: 30px;
+ }   
+
+#main-content{
+    flex-direction: column;
+    max-width: 370px;
+    margin: auto;
 }
 
 .primary-text {
-    width: 56%;
-    font-size: 32px;
+    text-align: center;
+    font-size: 27px;
     text-transform: uppercase;
     color: #fff;
-    text-align: center;
     letter-spacing: 2px;
-    line-height: 40px;
-    
+    line-height: 40px; 
+    font-weight: bold;  
 }
 
-.headline{
+.primary-text span{
     color: #f7b154;
     text-shadow: 0px 0px 10px #008037, 0px 0px 10px #008037;
 }
 
-.second-text {
-    width: 50%;
-    font-size: 18px;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    line-height: 35px;
-    font-weight: normal;
-    text-align: center;
-    margin-top: 30px;
-}
+#main-content h3{
 
-/*.main-image{
-    width: 350px;
-    height: auto;
-    margin-top: 20px;
-    margin-left: 50px;
-}*/
+    margin-top: 30px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 30px;
+    text-align: justify;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
 
 .main-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
+    margin-top: 35px;
 }
 
 .main-button button {
     width: 300px;
-    height: 65px;
+    height: 60px;
     cursor: pointer;
     border: 2px solid #f7b154;
     color: #f7b154;
@@ -137,7 +133,7 @@ header{
     left: 0;
     position: absolute;
     width: 0;
-    height: 65px;
+    height: 60px;
     background-color: #f7b154;
     box-shadow: 0px 0px 5px #008037, 0px 0px 5px #008037;
     z-index: -1;
@@ -150,119 +146,116 @@ header{
 
 /* CARDS */
 
-.main-cards{
+#main-cards{
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
     font-weight: normal;
+    margin-top: 70px;
 }
 
-.main-cards h2{
+#main-cards h3{
     color: #fff;
-    text-transform: uppercase;
-    font-size: 25px;
-    margin-top: 130px;
-    letter-spacing: 3px;
     text-shadow: 0px 0px 10px #008037, 0px 0px 10px #008037;
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 3px;
 }
 
 .cards{
-    margin-top: 50px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
     letter-spacing: 2px;
-    display: flex;
-    flex-direction: row;
-  
 }
 
 .card{
-    background-color: transparent;
-    width: 200px;
-    height: 200px;
-    margin-left: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    text-align: center;
+    background-color: transparent; 
 }
 
 .card img{
-    width: 100px;
+    width: 80px;
     height: auto;
 }
 
 
-.card h3{
-    color: #fff;
+.card h4{
+    color: #f7b154;
     text-transform: uppercase;
     font-size: 18px;
-    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 50px;
 }
 
 /* INFORMAÇÕES */
 
-.infos{
-    display: flex;
+#infos{
+    max-width: 320px;
+    margin: auto;
+    display: block;
     justify-content: center;
     align-items: center;
-    margin-top: 70px;
+    text-align: center;
 }
 
-.final-content{
-    width: 40%;
+#infos h3{
     font-size: 15px;
     color: #fff;
     text-transform: uppercase;
     font-weight: normal;
-    text-align: center;
-    line-height: 40px;
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 30px;
 }
 
-.final-content h2{
-    letter-spacing: 3px;
-}
 
-.final-content span{
+#infos span{
     color: #f7b154;
-    font-size: 30px;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .img2{
-    height: 100px;
-    margin-top: 50px;
+    height: 80px;
+    margin-top: 40px;
 }
 
 /* CTA */
 
-.cta{
+#cta{
+    max-width: 320px;
+    margin: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    line-height: 40px;
+    
 }
 
-.cta h1{
-    width: 40%;
+#cta h1{
+    margin-top: 30px;
     text-align: center;
-    letter-spacing: 3px;
-    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: bold;
     color: #fff;
     text-transform: uppercase;
-    font-weight: bold;
     text-shadow: 0px 0px 10px #008037, 0px 0px 10px #008037;
 }
 
 .final-button {
     align-items: center;
-    margin-top: 30px;
+    margin-top: 20px;
     display: flex;
     justify-content: center; 
 }
 
 .final-button button {
     width: 300px;
-    height: 65px;
+    height: 60px;
     cursor: pointer;
     border: 2px solid #f7b154;
     color: #f7b154;
@@ -289,7 +282,7 @@ header{
     left: 0;
     position: absolute;
     width: 0;
-    height: 65px;
+    height: 60px;
     background-color: #f7b154;
     box-shadow: 0px 0px 5px #008037, 0px 0px 5px #008037;
     z-index: -1;
@@ -303,17 +296,17 @@ header{
 /* RODAPÉ */
 
 footer{
-    margin-top: 95px;
-    background-color: #071a14;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.rodape h3{
-    padding-top: 15px;
+footer p{
+    padding: 15px;
     font-weight: normal;
-    color: #fff;
+    font-size: 15px;
+    color: #e9ecea;
 }
 
 /* @media screen and (min-width: 768px){
