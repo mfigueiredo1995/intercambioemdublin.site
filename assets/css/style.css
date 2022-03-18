@@ -379,6 +379,7 @@ header .logotipo{
     letter-spacing: 2px;
     padding-left: 20px;
     padding-right: 20px;
+    text-align: justify;
 }
 
 .main-button {
@@ -424,7 +425,7 @@ header .logotipo{
 }
 
 .card h4{
-    font-size: 15px;
+    font-size: 18px;
     padding-top: 20px;
     padding-bottom: 40px;
 }
@@ -439,6 +440,7 @@ header .logotipo{
 }
 
 #infos h3{
+    text-align: justify;
     font-size: 15px;
     padding-left: 20px;
     padding-right: 20px;  
@@ -468,7 +470,7 @@ header .logotipo{
 #cta h1{
     padding-left: 20px;
     padding-right: 20px;  
-    margin-top: 10px;
+    margin-top: 20px;
     font-size: 20px;
 }
 
